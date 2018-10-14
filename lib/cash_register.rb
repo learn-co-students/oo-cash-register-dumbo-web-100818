@@ -41,7 +41,7 @@ end
 
 # Reverses the last transaction
 def void_last_transaction
-  self.total = self.total - (self.transaction[-1]/(1 - self.discount)
+  self.total = self.total - (self.transaction[-1]/(1 - self.discount))
   self.items.pop
   self.transaction.pop
   #binding.pry
